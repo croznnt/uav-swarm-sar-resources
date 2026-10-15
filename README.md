@@ -1,12 +1,11 @@
 # 🚁 UAV Swarm Simulation & Search and Rescue
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Projects-11-2563eb?style=flat-square" alt="11 curated projects">
-  <img src="https://img.shields.io/badge/Focus-Search%20%26%20Rescue-dc2626?style=flat-square" alt="Search and rescue">
-  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&amp;logo=python&amp;logoColor=white" alt="Python">
-  <img src="https://img.shields.io/badge/MATLAB-e16737?style=flat-square" alt="MATLAB">
-  <img src="https://img.shields.io/badge/ROS-22314E?style=flat-square&amp;logo=ros&amp;logoColor=white" alt="ROS">
+  <a href="https://www.python.org/"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/python/python-original.svg" width="64" height="64" alt="Python logo" title="Python"></a>&nbsp;&nbsp;&nbsp;
+  <a href="https://www.mathworks.com/products/matlab.html"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/matlab/matlab-original.svg" width="64" height="64" alt="MATLAB logo" title="MATLAB"></a>&nbsp;&nbsp;&nbsp;
+  <a href="https://www.ros.org/"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/ros/ros-original-wordmark.svg" width="96" height="64" alt="ROS logo" title="ROS"></a>
 </p>
+<p align="center"><strong>Python · MATLAB · ROS</strong></p>
 
 A curated collection of **11 UAV swarm simulation projects**, with an emphasis on **search and rescue (SAR)**. Explore cooperative search, flight dynamics, multi-agent reinforcement learning, and emergency communication networks.
 
