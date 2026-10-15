@@ -1,4 +1,4 @@
-"""Build the curated Vietnamese resource index using only the standard library."""
+"""Build an English overview and Vietnamese profiles with the standard library."""
 import csv
 import json
 from pathlib import Path
@@ -9,9 +9,9 @@ ROOT = Path(__file__).resolve().parents[1]
 def main():
     entries = json.loads((ROOT / 'catalog.json').read_text(encoding='utf-8'))
     assert len({e['repo'] for e in entries}) == len(entries)
-    fields = list(entries[0])
+    fields = [key for key in entries[0] if key != 'readme_en']
     with (ROOT / 'catalog.csv').open('w', newline='', encoding='utf-8-sig') as stream:
-        writer = csv.DictWriter(stream, fieldnames=fields)
+        writer = csv.DictWriter(stream, fieldnames=fields, extrasaction='ignore')
         writer.writeheader()
         writer.writerows(entries)
     rows = []
@@ -20,7 +20,8 @@ def main():
     for e in entries:
         slug = e['repo'].replace('/', '__')
         url = 'https://github.com/' + e['repo']
-        rows.append(f"| [{e['name']}]({url}) | {e['group']} | {e['stack']} | {e['sar']} | [Chi tiết](repositories/{slug}.md) |")
+        overview = e['readme_en']
+        rows.append(f"| [{e['name']}]({url}) | {overview['category']} | {overview['technology']} | {overview['sar']} | [Details](repositories/{slug}.md) |")
         (profiles / f'{slug}.md').write_text(
             f"# {e['name']}\n\n[Nguồn chính thức]({url})\n\n"
             f"## Vai trò\n\n{e['capability']}\n\n"

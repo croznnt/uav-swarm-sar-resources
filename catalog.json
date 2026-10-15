@@ -9,7 +9,12 @@
     "extension": "Có thể mở rộng chiến lược phân vùng, pin và mạng liên lạc theo câu hỏi nghiên cứu.",
     "exercise": "So sánh quét chia vùng với chính sách ưu tiên xác suất trên cùng seed.",
     "caveat": "Mô hình nhiệm vụ không thay thế mô phỏng động lực học bay. Phụ thuộc môi trường tìm kiếm và môi trường coverage có thể khác nhau.",
-    "checked": "2026-10-15"
+    "checked": "2026-10-15",
+    "readme_en": {
+      "category": "🛟 SAR",
+      "technology": "Python, PettingZoo, Pygame, OpenDrift",
+      "sar": "Maritime SAR search and coverage environments"
+    }
   },
   {
     "name": "SwarmSAR",
@@ -21,7 +26,12 @@
     "extension": "Kiểm tra mức hoàn thiện từng chức năng trước khi dùng làm benchmark.",
     "exercise": "So sánh random walk và lawnmower rồi khảo sát giới hạn tầm liên lạc.",
     "caveat": "Các con số hiệu năng do tác giả công bố chưa được danh mục kiểm chứng. Lộ trình Isaac Sim và phần cứng không được coi là tính năng đã hoàn thành.",
-    "checked": "2026-10-15"
+    "checked": "2026-10-15",
+    "readme_en": {
+      "category": "🛟 SAR",
+      "technology": "Python, Pygame",
+      "sar": "2D cooperative search with a SAR focus"
+    }
   },
   {
     "name": "CTS visual drone swarm",
@@ -33,7 +43,12 @@
     "extension": "Cần bổ sung mô hình nạn nhân, điều kiện cứu nạn, sai số phát hiện và tiêu chí đánh giá SAR.",
     "exercise": "Tái lập một cấu hình gốc trước khi đổi sang mục tiêu mô phỏng người cần cứu.",
     "caveat": "Mã nghiên cứu có thể ràng buộc phiên bản cũ. Không coi tìm mục tiêu đồng nghĩa nhận dạng người gặp nạn. URL cũ NTU-UAVG chuyển sang NTU-ICG.",
-    "checked": "2026-10-15"
+    "checked": "2026-10-15",
+    "readme_en": {
+      "category": "🔍 Target search",
+      "technology": "Visual simulation, multi-agent RL",
+      "sar": "Cooperative visual search; SAR modeling needs extensions"
+    }
   },
   {
     "name": "gym-pybullet-drones",
@@ -45,7 +60,12 @@
     "extension": "Thêm bản đồ tìm kiếm, cảm biến mục tiêu, phân công nhiệm vụ và reward phù hợp.",
     "exercise": "Chạy ví dụ PID upstream, sau đó đo sai số bám quỹ đạo của hai UAV.",
     "caveat": "Nhánh hiện tại khác mã bài báo IROS 2021. Chọn đúng nhánh khi tái lập. PyBullet có thể cần biên dịch theo Python và hệ điều hành.",
-    "checked": "2026-10-15"
+    "checked": "2026-10-15",
+    "readme_en": {
+      "category": "⚙️ Platform",
+      "technology": "Python, PyBullet, Gymnasium",
+      "sar": "Add search missions, target sensing, and task allocation"
+    }
   },
   {
     "name": "QuadSwarm",
@@ -57,7 +77,12 @@
     "extension": "Thêm mục tiêu tìm kiếm, mô hình quan sát và đánh giá nhiệm vụ.",
     "exercise": "Tái lập ví dụ nhiều quadrotor rồi khảo sát số UAV và va chạm.",
     "caveat": "Kiểm tra phiên bản framework huấn luyện và cấu hình gốc. Tốc độ huấn luyện không phản ánh chất lượng tìm kiếm.",
-    "checked": "2026-10-15"
+    "checked": "2026-10-15",
+    "readme_en": {
+      "category": "⚙️ Platform",
+      "technology": "Python, Sample Factory, multi-agent RL",
+      "sar": "Add search objectives and mission-level evaluation"
+    }
   },
   {
     "name": "XTDrone",
@@ -69,7 +94,12 @@
     "extension": "Bổ sung thế giới thiên tai, mục tiêu, cảm biến và bộ phân công tìm kiếm.",
     "exercise": "Chạy ví dụ nhiều UAV upstream, kiểm tra namespace và log vị trí trước khi thêm nhiệm vụ.",
     "caveat": "Các thế hệ ROS, Gazebo và PX4 không thể hoán đổi tùy ý. Cần theo đúng tài liệu của nhánh chọn.",
-    "checked": "2026-10-15"
+    "checked": "2026-10-15",
+    "readme_en": {
+      "category": "⚙️ Platform",
+      "technology": "ROS, PX4, Gazebo, Python, C++",
+      "sar": "Build multi-UAV SAR scenarios on a flight simulation stack"
+    }
   },
   {
     "name": "Pegasus Simulator",
@@ -81,7 +111,12 @@
     "extension": "Bổ sung cảnh cứu nạn, mục tiêu và logic phối hợp, chọn cảm biến theo khả năng nền tảng.",
     "exercise": "Chạy ví dụ 2_px4_multi_vehicle.py theo hướng dẫn của đúng phiên bản.",
     "caveat": "Yêu cầu GPU, driver và Isaac Sim tương thích. Ví dụ nhiều phương tiện không tự cung cấp thuật toán bầy đàn.",
-    "checked": "2026-10-15"
+    "checked": "2026-10-15",
+    "readme_en": {
+      "category": "⚙️ Platform",
+      "technology": "Python, NVIDIA Isaac Sim, PX4",
+      "sar": "Build 3D SAR scenes and coordination logic"
+    }
   },
   {
     "name": "Crazyswarm2",
@@ -93,7 +128,12 @@
     "extension": "Thêm logic tìm kiếm, cảm biến mục tiêu và thước đo SAR.",
     "exercise": "Chạy hello_world với backend sim theo tài liệu rồi lập lịch quỹ đạo nhiều UAV.",
     "caveat": "Phạm vi Crazyflie và phòng thí nghiệm khác UAV cứu nạn ngoài trời. Cần kiểm tra cấu hình dynamics trong backend mô phỏng.",
-    "checked": "2026-10-15"
+    "checked": "2026-10-15",
+    "readme_en": {
+      "category": "⚙️ Platform",
+      "technology": "ROS 2, Python, Crazyflie",
+      "sar": "Prototype coordinated search in a laboratory setting"
+    }
   },
   {
     "name": "SwarmLab",
@@ -105,7 +145,12 @@
     "extension": "Thêm phủ vùng, mục tiêu, xác suất phát hiện và giới hạn nhiệm vụ.",
     "exercise": "Chạy GUI_swarm hoặc example_vasarhelyi rồi đo khoảng cách giữa các UAV.",
     "caveat": "README yêu cầu MATLAB và Statistics and Machine Learning Toolbox. Point mass không mô tả đầy đủ động lực học phương tiện.",
-    "checked": "2026-10-15"
+    "checked": "2026-10-15",
+    "readme_en": {
+      "category": "⚙️ Platform",
+      "technology": "MATLAB",
+      "sar": "Extend swarm models with coverage and target detection"
+    }
   },
   {
     "name": "SwarmFly",
@@ -117,7 +162,12 @@
     "extension": "Đánh giá cơ chế mở rộng để thêm mục tiêu và chỉ số tìm kiếm cứu nạn.",
     "exercise": "Chạy ví dụ upstream rồi lưu một cấu hình đội hình có thể lặp lại.",
     "caveat": "Đọc yêu cầu MATLAB và plugin của đúng phiên bản. Chưa xác nhận các chức năng hoặc hiệu năng bằng chạy thử.",
-    "checked": "2026-10-15"
+    "checked": "2026-10-15",
+    "readme_en": {
+      "category": "⚙️ Platform",
+      "technology": "MATLAB, MATLAB GUI",
+      "sar": "Explore extensions for SAR experiment design"
+    }
   },
   {
     "name": "UAV Swarm Network Simulator",
@@ -129,6 +179,11 @@
     "extension": "Ghép kết quả mạng với nhiệm vụ tìm kiếm, không giả định đã có mô hình phát hiện nạn nhân.",
     "exercise": "Khảo sát ảnh hưởng tầm truyền và số UAV đến độ trễ, mất gói.",
     "caveat": "Mô phỏng mạng không thay thế mô phỏng bay hoặc SAR. Cần xác định backend và mức tích hợp NS-3 thực sự dùng trong cấu hình.",
-    "checked": "2026-10-15"
+    "checked": "2026-10-15",
+    "readme_en": {
+      "category": "📡 Network",
+      "technology": "Python, NS-3, C++",
+      "sar": "Emergency communication research supporting rescue missions"
+    }
   }
 ]

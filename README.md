@@ -1,53 +1,90 @@
 # 🚁 UAV Swarm Simulation & Search and Rescue
 
-Danh mục 11 dự án mô phỏng UAV bầy đàn và công cụ liên quan, ưu tiên tìm kiếm cứu nạn (SAR). Bao gồm Python, MATLAB, ROS, mô phỏng vật lý, học tăng cường nhiều tác tử và mạng liên lạc.
+<p align="center">
+  <img src="https://img.shields.io/badge/Projects-11-2563eb?style=flat-square" alt="11 curated projects">
+  <img src="https://img.shields.io/badge/Focus-Search%20%26%20Rescue-dc2626?style=flat-square" alt="Search and rescue">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&amp;logo=python&amp;logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/MATLAB-e16737?style=flat-square" alt="MATLAB">
+  <img src="https://img.shields.io/badge/ROS-22314E?style=flat-square&amp;logo=ros&amp;logoColor=white" alt="ROS">
+</p>
 
-## 🎯 Bắt đầu theo mục tiêu
+A curated collection of **11 UAV swarm simulation projects**, with an emphasis on **search and rescue (SAR)**. Explore cooperative search, flight dynamics, multi-agent reinforcement learning, and emergency communication networks.
 
-1. Tìm người gặp nạn trên biển: bắt đầu với DSSE, có môi trường tìm kiếm và phủ vùng gắn với mô hình trôi dạt.
-2. Phối hợp tìm kiếm trên bản đồ 2D: khảo sát SwarmSAR, kiểm tra lại các tuyên bố hiệu năng trước khi chọn.
-3. Tìm mục tiêu bằng thị giác: xem CTS visual drone swarm, phân biệt tìm mục tiêu với mô phỏng cứu nạn hoàn chỉnh.
-4. Mô phỏng động lực học bằng Python: xem gym-pybullet-drones hoặc QuadSwarm.
-5. Mô phỏng bầy đàn bằng MATLAB: bắt đầu với SwarmLab, xem thêm SwarmFly.
-6. Kiểm tra điều khiển bay và nhiều phương tiện: xem XTDrone, Pegasus hoặc Crazyswarm2.
-7. Liên lạc khẩn cấp: xem uav-swarm-sim để khảo sát mạng UAV.
+**Explore:** [Project catalog](#-project-catalog) · [Selection guide](docs/SELECTION_GUIDE.md) · [SAR benchmark](docs/SAR_BENCHMARK.md) · [Catalog data](catalog.json)
 
-## 📚 Danh mục
+## 🧭 Choose your starting point
 
-| Dự án | Nhóm | Nền tảng | Liên hệ SAR | Hồ sơ |
+| Your goal | Start with | What to consider |
+| :--- | :--- | :--- |
+| 🌊 Maritime search and rescue | DSSE | Search and coverage environments with drift-based search distributions |
+| 🗺️ Cooperative search on a 2D map | SwarmSAR | Verify implementation maturity and reported performance |
+| 👁️ Visual target search | CTS visual drone swarm | Add SAR-specific targets, sensing assumptions, and evaluation |
+| 🐍 Flight dynamics and learning in Python | gym-pybullet-drones, QuadSwarm | Build mission logic on top of the flight simulation |
+| 📐 Swarm algorithms in MATLAB | SwarmLab, SwarmFly | Check MATLAB versions, toolboxes, and vehicle models |
+| 🛩️ Multi-vehicle flight and control | XTDrone, Pegasus, Crazyswarm2 | Match middleware, autopilot, simulator, and hardware requirements |
+| 📡 Emergency communication networks | uav-swarm-sim | Evaluate communication separately from flight and search performance |
+
+## 📚 Project catalog
+
+| Project | Category | Technology | SAR relevance | Profile |
 | :--- | :--- | :--- | :--- | :--- |
-| [DSSE](https://github.com/capstone-insper/drone-swarm-search) | SAR | Python, PettingZoo, Pygame, OpenDrift | Có sẵn bài toán SAR trên biển. | [Chi tiết](repositories/capstone-insper__drone-swarm-search.md) |
-| [SwarmSAR](https://github.com/AngusMcGlynn/SwarmSAR) | SAR | Python, Pygame | Có sẵn định hướng tìm kiếm cứu nạn. | [Chi tiết](repositories/AngusMcGlynn__SwarmSAR.md) |
-| [CTS visual drone swarm](https://github.com/NTU-ICG/CTS-visual-drone-swarm) | Tìm mục tiêu | Mã nghiên cứu, mô phỏng thị giác, MARL | Tìm mục tiêu hợp tác, có thể phát triển cho SAR. | [Chi tiết](repositories/NTU-ICG__CTS-visual-drone-swarm.md) |
-| [gym-pybullet-drones](https://github.com/learnsyslab/gym-pybullet-drones) | Nền tảng | Python, PyBullet, Gymnasium | Cần tự xây dựng nhiệm vụ SAR. | [Chi tiết](repositories/learnsyslab__gym-pybullet-drones.md) |
-| [QuadSwarm](https://github.com/Zhehui-Huang/quad-swarm-rl) | Nền tảng | Python, học tăng cường, Sample Factory | Cần tự xây dựng nhiệm vụ SAR. | [Chi tiết](repositories/Zhehui-Huang__quad-swarm-rl.md) |
-| [XTDrone](https://github.com/robin-shaun/XTDrone) | Nền tảng | ROS, PX4, Gazebo, Python, C++ | Nền tảng nhiều UAV để xây dựng kịch bản SAR. | [Chi tiết](repositories/robin-shaun__XTDrone.md) |
-| [Pegasus Simulator](https://github.com/PegasusSimulator/PegasusSimulator) | Nền tảng | Python, NVIDIA Isaac Sim, PX4 | Nền tảng 3D để xây dựng kịch bản SAR. | [Chi tiết](repositories/PegasusSimulator__PegasusSimulator.md) |
-| [Crazyswarm2](https://github.com/IMRCLab/crazyswarm2) | Nền tảng | ROS 2, Python, Crazyflie | Phù hợp thử nghiệm phối hợp quy mô phòng thí nghiệm. | [Chi tiết](repositories/IMRCLab__crazyswarm2.md) |
-| [SwarmLab](https://github.com/lis-epfl/swarmlab) | Nền tảng | MATLAB | Cần tự xây dựng nhiệm vụ SAR. | [Chi tiết](repositories/lis-epfl__swarmlab.md) |
-| [SwarmFly](https://github.com/abhishekphadke/SwarmFly) | Nền tảng | MATLAB, MATLAB GUI | Công cụ thiết kế thí nghiệm có thể mở rộng cho SAR. | [Chi tiết](repositories/abhishekphadke__SwarmFly.md) |
-| [UAV Swarm Network Simulator](https://github.com/pabloramesc/uav-swarm-sim) | Mạng | Python, NS-3, C++ | Liên quan liên lạc khẩn cấp hỗ trợ cứu nạn. | [Chi tiết](repositories/pabloramesc__uav-swarm-sim.md) |
+| [DSSE](https://github.com/capstone-insper/drone-swarm-search) | 🛟 SAR | Python, PettingZoo, Pygame, OpenDrift | Maritime SAR search and coverage environments | [Details](repositories/capstone-insper__drone-swarm-search.md) |
+| [SwarmSAR](https://github.com/AngusMcGlynn/SwarmSAR) | 🛟 SAR | Python, Pygame | 2D cooperative search with a SAR focus | [Details](repositories/AngusMcGlynn__SwarmSAR.md) |
+| [CTS visual drone swarm](https://github.com/NTU-ICG/CTS-visual-drone-swarm) | 🔍 Target search | Visual simulation, multi-agent RL | Cooperative visual search; SAR modeling needs extensions | [Details](repositories/NTU-ICG__CTS-visual-drone-swarm.md) |
+| [gym-pybullet-drones](https://github.com/learnsyslab/gym-pybullet-drones) | ⚙️ Platform | Python, PyBullet, Gymnasium | Add search missions, target sensing, and task allocation | [Details](repositories/learnsyslab__gym-pybullet-drones.md) |
+| [QuadSwarm](https://github.com/Zhehui-Huang/quad-swarm-rl) | ⚙️ Platform | Python, Sample Factory, multi-agent RL | Add search objectives and mission-level evaluation | [Details](repositories/Zhehui-Huang__quad-swarm-rl.md) |
+| [XTDrone](https://github.com/robin-shaun/XTDrone) | ⚙️ Platform | ROS, PX4, Gazebo, Python, C++ | Build multi-UAV SAR scenarios on a flight simulation stack | [Details](repositories/robin-shaun__XTDrone.md) |
+| [Pegasus Simulator](https://github.com/PegasusSimulator/PegasusSimulator) | ⚙️ Platform | Python, NVIDIA Isaac Sim, PX4 | Build 3D SAR scenes and coordination logic | [Details](repositories/PegasusSimulator__PegasusSimulator.md) |
+| [Crazyswarm2](https://github.com/IMRCLab/crazyswarm2) | ⚙️ Platform | ROS 2, Python, Crazyflie | Prototype coordinated search in a laboratory setting | [Details](repositories/IMRCLab__crazyswarm2.md) |
+| [SwarmLab](https://github.com/lis-epfl/swarmlab) | ⚙️ Platform | MATLAB | Extend swarm models with coverage and target detection | [Details](repositories/lis-epfl__swarmlab.md) |
+| [SwarmFly](https://github.com/abhishekphadke/SwarmFly) | ⚙️ Platform | MATLAB, MATLAB GUI | Explore extensions for SAR experiment design | [Details](repositories/abhishekphadke__SwarmFly.md) |
+| [UAV Swarm Network Simulator](https://github.com/pabloramesc/uav-swarm-sim) | 📡 Network | Python, NS-3, C++ | Emergency communication research supporting rescue missions | [Details](repositories/pabloramesc__uav-swarm-sim.md) |
 
-## 🔎 Cách đọc danh mục
+**Category key:** 🛟 SAR mission environments · 🔍 Cooperative target search · ⚙️ Simulation and control platforms · 📡 Communication networks.
 
-Nhóm SAR có bài toán tìm kiếm cứu nạn trong tài liệu dự án. Nhóm tìm mục tiêu tập trung vào tìm kiếm hợp tác. Nhóm nền tảng cung cấp mô phỏng hoặc điều khiển, cần bổ sung nhiệm vụ SAR. Nhóm mạng phục vụ nghiên cứu liên lạc hỗ trợ cứu nạn.
+Detailed project profiles and supporting guides are currently in Vietnamese. This README provides an English overview.
 
-Các nhận xét về mức độ phù hợp là đánh giá biên tập từ nguồn chính thức, không phải kết quả so sánh thực nghiệm. Ngày đọc nguồn: 15 tháng 10 năm 2026. Chưa cài đặt, chạy thử hoặc xác nhận hiệu năng của các dự án bên thứ ba. Không dùng số sao để thay cho chất lượng hoặc độ phù hợp. Danh mục không khẳng định các dự án tương thích với nhau.
+## 🔎 Scope and verification
 
-## 🧪 Lộ trình nghiên cứu
+SAR environments explicitly describe search and rescue tasks. Target-search projects focus on cooperative discovery. General simulation platforms require additional mission logic, target models, and sensors. Network simulators support communication research relevant to rescue operations.
 
-Đọc [hướng dẫn chọn công cụ](docs/SELECTION_GUIDE.md), sau đó dùng [thiết kế benchmark SAR](docs/SAR_BENCHMARK.md) để xây dựng phép so sánh có thể lặp lại. Bắt đầu với chia vùng và quét zíc zắc, rồi mới thêm chính sách thích nghi hoặc học tăng cường.
+Sources were reviewed on **October 15, 2026**. Suitability notes are editorial assessments based on official repositories and documentation. Third-party projects have **not been installed, benchmarked, or validated here**. Compatibility between projects has not been established, and upstream performance claims require independent verification.
 
-## 🛠️ Dữ liệu và bảo trì
+## 🧪 Build a reproducible SAR experiment
 
-[catalog.json](catalog.json) là nguồn dữ liệu để chỉnh sửa. [catalog.csv](catalog.csv) phục vụ lọc bằng bảng tính. Mỗi hồ sơ có nguồn, khả năng, phần cần bổ sung, bài tập và giới hạn.
+1. **Choose a modeling level.** Use the [selection guide](docs/SELECTION_GUIDE.md) to decide whether you need mission-level simulation, flight dynamics, visual sensing, or network modeling.
+2. **Establish a baseline.** Start with equal-area partitioning and lawnmower coverage before adding adaptive policies or reinforcement learning.
+3. **Define the mission.** Specify targets, detection probability, battery limits, communication assumptions, and stopping conditions.
+4. **Compare fairly.** Follow the [proposed SAR benchmark](docs/SAR_BENCHMARK.md), using matched seeds and consistent mission budgets.
+5. **Record evidence.** Save upstream commits, configurations, trajectories, logs, and failure cases alongside results.
 
-Từ thư mục repo, chạy bằng Python tiêu chuẩn:
+The benchmark is an experimental proposal; this repository does not report benchmark results. Detecting a simulated target is distinct from completing a rescue operation.
+
+## 🗂️ Repository contents
+
+| Resource | Purpose |
+| :--- | :--- |
+| [catalog.json](catalog.json) | Source data for all curated entries |
+| [catalog.csv](catalog.csv) | Spreadsheet-friendly export for filtering and comparison |
+| [repositories/](repositories/) | Profiles with capabilities, SAR extensions, exercises, and limitations |
+| [Selection guide](docs/SELECTION_GUIDE.md) | Platform choices and environment considerations |
+| [SAR benchmark](docs/SAR_BENCHMARK.md) | Proposed scenarios, baselines, metrics, and run records |
+| [README template](docs/README.template.md) | Source template for this generated overview |
+
+## 🛠️ Maintain the catalog
+
+Edit [catalog.json](catalog.json), including the English overview fields under `readme_en`. From the repository root, regenerate the README, CSV, and profiles:
 
 ```console
 python scripts/build_catalog.py
 ```
 
-Lệnh sinh lại README, CSV và hồ sơ từ JSON cùng [mẫu README](docs/README.template.md). Không cài thêm thư viện. Khi cập nhật nguồn, sửa ngày kiểm tra của từng mục và ghi rõ mức kiểm chứng. Không ghi kết quả benchmark khi chưa có log, cấu hình và commit nguồn.
+The generator uses only the Python standard library. Update each entry's review date when checking its sources. Claims of successful execution or benchmark performance should include the environment, configuration, upstream commit, and logs.
 
-Đóng góp theo [CONTRIBUTING.md](CONTRIBUTING.md). Repo này chứa mô tả và liên kết, không phân phối mã nguồn của các dự án được liệt kê. Giấy phép từng công cụ cần kiểm tra tại upstream và đúng commit sử dụng.
+## 🤝 Contribute
+
+See [CONTRIBUTING.md](CONTRIBUTING.md). Prefer official sources, explain how each project relates to SAR, and distinguish documented capabilities from proposed extensions.
+
+## 📄 Upstream licenses
+
+This collection contains descriptions and links without redistributing upstream source code. Check each project's license at the exact revision you intend to use. MATLAB, Isaac Sim, and other dependencies may have separate licensing and system requirements.
