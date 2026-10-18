@@ -7,7 +7,7 @@
 </p>
 <p align="center"><strong>Python · MATLAB · ROS</strong></p>
 
-A curated collection of **11 UAV swarm simulation projects**, with an emphasis on **search and rescue (SAR)**. Explore cooperative search, flight dynamics, multi-agent reinforcement learning, and emergency communication networks.
+A curated collection of **15 UAV swarm simulation and supporting optimization projects**, with an emphasis on **search and rescue (SAR)**. Explore cooperative search, flight dynamics, multi-agent reinforcement learning, and emergency communication networks.
 
 **Explore:** [Project catalog](#-project-catalog) · [Selection guide](docs/SELECTION_GUIDE.md) · [SAR benchmark](docs/SAR_BENCHMARK.md) · [Catalog data](catalog.json)
 
@@ -38,16 +38,22 @@ A curated collection of **11 UAV swarm simulation projects**, with an emphasis o
 | [SwarmLab](https://github.com/lis-epfl/swarmlab) | ⚙️ Platform | MATLAB | Extend swarm models with coverage and target detection | [Details](repositories/lis-epfl__swarmlab.md) |
 | [SwarmFly](https://github.com/abhishekphadke/SwarmFly) | ⚙️ Platform | MATLAB, MATLAB GUI | Explore extensions for SAR experiment design | [Details](repositories/abhishekphadke__SwarmFly.md) |
 | [UAV Swarm Network Simulator](https://github.com/pabloramesc/uav-swarm-sim) | 📡 Network | Python, NS-3, C++ | Emergency communication research supporting rescue missions | [Details](repositories/pabloramesc__uav-swarm-sim.md) |
+| [QAOA](https://github.com/OpenQuantumComputing/QAOA) | ⚛️ Quantum optimization | Python, Qiskit, Qiskit Aer | Candidate for small discrete SAR task-allocation experiments | [Details](repositories/OpenQuantumComputing__QAOA.md) |
+| [SWAN](https://github.com/Data-Science-in-Mechanical-Engineering/SWAN) | 🎆 Choreography | Python, ComfyUI, AXSwarm, crazyflow | Trajectory coordination reference; designed for drone light shows | [Details](repositories/Data-Science-in-Mechanical-Engineering__SWAN.md) |
+| [UAV trajectory optimization with PSO](https://github.com/Mahek010/uav-trajectory-optimization-pso) | 🛤️ Path planning | Python, NumPy, Matplotlib | Single-UAV routing baseline; multi-UAV SAR requires extensions | [Details](repositories/Mahek010__uav-trajectory-optimization-pso.md) |
+| [QAOA training pipeline](https://github.com/qiskit-community/qaoa_training_pipeline) | 🧠 Parameter training | Python, Qiskit, tensor networks | Classical QAOA parameter preparation for encoded mission problems | [Details](repositories/qiskit-community__qaoa_training_pipeline.md) |
 
-**Category key:** 🛟 SAR mission environments · 🔍 Cooperative target search · ⚙️ Simulation and control platforms · 📡 Communication networks.
+Read the [technical review of QAOA, SWAN, PSO, and the QAOA training pipeline](docs/OPTIMIZATION_ANALYSIS.md) for source findings, limitations, and proposed SAR integration. These additions include supporting optimization tools, not just UAV simulators.
 
-Detailed project profiles and supporting guides are currently in Vietnamese. This README provides an English overview.
+**Category key:** 🛟 SAR mission environments · 🔍 Cooperative target search · ⚙️ Simulation and control platforms · 📡 Communication networks · ⚛️ Quantum optimization · 🎆 Choreography · 🛤️ Path planning · 🧠 Parameter training.
+
+Individual project profiles, the selection guide, and the SAR benchmark are in Vietnamese. This README and the comparative optimization analysis are in English.
 
 ## 🔎 Scope and verification
 
 SAR environments explicitly describe search and rescue tasks. Target-search projects focus on cooperative discovery. General simulation platforms require additional mission logic, target models, and sensors. Network simulators support communication research relevant to rescue operations.
 
-Sources were reviewed on **October 15, 2026**. Suitability notes are editorial assessments based on official repositories and documentation. Third-party projects have **not been installed, benchmarked, or validated here**. Compatibility between projects has not been established, and upstream performance claims require independent verification.
+The original 11 entries were reviewed on **October 15, 2026**; four optimization and choreography entries were added on **October 18, 2026**. See each entry for its review date. Suitability notes are editorial assessments based on official repositories and documentation. Third-party projects have **not been installed, benchmarked, or validated here**. Compatibility between projects has not been established, and upstream performance claims require independent verification.
 
 ## 🧪 Build a reproducible SAR experiment
 
@@ -68,6 +74,7 @@ The benchmark is an experimental proposal; this repository does not report bench
 | [repositories/](repositories/) | Profiles with capabilities, SAR extensions, exercises, and limitations |
 | [Selection guide](docs/SELECTION_GUIDE.md) | Platform choices and environment considerations |
 | [SAR benchmark](docs/SAR_BENCHMARK.md) | Proposed scenarios, baselines, metrics, and run records |
+| [Optimization analysis](docs/OPTIMIZATION_ANALYSIS.md) | Four source reviews, integration proposals, and a small assignment formulation |
 | [README template](docs/README.template.md) | Source template for this generated overview |
 
 ## 🛠️ Maintain the catalog

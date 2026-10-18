@@ -185,5 +185,81 @@
       "technology": "Python, NS-3, C++",
       "sar": "Emergency communication research supporting rescue missions"
     }
+  },
+  {
+    "name": "QAOA",
+    "repo": "OpenQuantumComputing/QAOA",
+    "group": "Tối ưu lượng tử",
+    "stack": "Python, Qiskit, Qiskit Aer",
+    "sar": "Ứng viên nghiên cứu phân công vùng tìm kiếm rời rạc.",
+    "capability": "Thư viện QAOA mô đun cho các bài toán tổ hợp, gồm QUBO.",
+    "extension": "Cần tự mã hóa nhiệm vụ UAV và giải mã nghiệm thành phân công.",
+    "exercise": "So sánh bài toán phân công nhỏ với vét cạn trước khi ghép mô phỏng.",
+    "caveat": "Không cung cấp sẵn mô phỏng UAV hoặc SAR; cần kiểm tra dấu hàm mục tiêu và quy ước tham số.",
+    "checked": "2026-10-18",
+    "readme_en": {
+      "category": "⚛️ Quantum optimization",
+      "technology": "Python, Qiskit, Qiskit Aer",
+      "sar": "Candidate for small discrete SAR task-allocation experiments"
+    },
+    "analysis_anchor": "-openquantumcomputingqaoa",
+    "source_commit": "3ba1d8d54f0fc47b1d0fd963fae0197dd0b551f9"
+  },
+  {
+    "name": "SWAN",
+    "repo": "Data-Science-in-Mechanical-Engineering/SWAN",
+    "group": "Điều phối quỹ đạo",
+    "stack": "Python, ComfyUI, AXSwarm, crazyflow",
+    "sar": "Có thể tham khảo điều phối quỹ đạo, chưa có nhiệm vụ SAR.",
+    "capability": "Pipeline tạo trình diễn ánh sáng bằng drone từ mô tả ngôn ngữ.",
+    "extension": "Thay mục tiêu trình diễn bằng waypoint tìm kiếm và bổ sung đánh giá nhiệm vụ.",
+    "exercise": "Kiểm tra một đội hình nhỏ với khoảng cách và lỗi bám quỹ đạo.",
+    "caveat": "Không phải simulator cứu nạn; kiểm tra va chạm theo mẫu thời gian không bảo đảm liên tục.",
+    "checked": "2026-10-18",
+    "readme_en": {
+      "category": "🎆 Choreography",
+      "technology": "Python, ComfyUI, AXSwarm, crazyflow",
+      "sar": "Trajectory coordination reference; designed for drone light shows"
+    },
+    "analysis_anchor": "-swan",
+    "source_commit": "4915d4842498ec601b1bbea9c5786e2e8ee0ac87"
+  },
+  {
+    "name": "UAV trajectory optimization with PSO",
+    "repo": "Mahek010/uav-trajectory-optimization-pso",
+    "group": "Lập đường đi",
+    "stack": "Python, NumPy, Matplotlib",
+    "sar": "Baseline lập đường đi cho một UAV.",
+    "capability": "Tối ưu waypoint với hàm mục tiêu độ dài, proxy năng lượng, độ trơn và các penalty.",
+    "extension": "Cần bổ sung thời gian, phối hợp nhiều UAV và cảm biến tìm kiếm.",
+    "exercise": "Chạy nhiều seed, kiểm tra va chạm độc lập trên toàn bộ đoạn đường.",
+    "caveat": "Hạt PSO là nghiệm ứng viên, không phải UAV; proxy năng lượng không phải mô hình pin được hiệu chuẩn.",
+    "checked": "2026-10-18",
+    "readme_en": {
+      "category": "🛤️ Path planning",
+      "technology": "Python, NumPy, Matplotlib",
+      "sar": "Single-UAV routing baseline; multi-UAV SAR requires extensions"
+    },
+    "analysis_anchor": "-uav-trajectory-optimization-with-pso",
+    "source_commit": "c38b16ea8444fc1efd8d9b1b72d6f96583635540"
+  },
+  {
+    "name": "QAOA training pipeline",
+    "repo": "qiskit-community/qaoa_training_pipeline",
+    "group": "Huấn luyện tham số",
+    "stack": "Python, Qiskit, tensor networks",
+    "sar": "Ứng viên chuẩn bị tham số QAOA cho bài toán phân công.",
+    "capability": "Huấn luyện tham số mạch QAOA bằng phương pháp tính toán cổ điển.",
+    "extension": "Cần Hamiltonian nhiệm vụ, mạch lấy mẫu và bước giải mã phân công.",
+    "exercise": "So sánh năng lượng evaluator với statevector trên cùng góc trước khi huấn luyện.",
+    "caveat": "Góc mạch không phải quỹ đạo UAV; phải đối chiếu dấu, hệ số Hamiltonian và thứ tự tham số khi chuyển thư viện.",
+    "checked": "2026-10-18",
+    "readme_en": {
+      "category": "🧠 Parameter training",
+      "technology": "Python, Qiskit, tensor networks",
+      "sar": "Classical QAOA parameter preparation for encoded mission problems"
+    },
+    "analysis_anchor": "-qaoa-training-pipeline",
+    "source_commit": "4bad7bc13e132d29f5545d60fa655a6229baa05b"
   }
 ]

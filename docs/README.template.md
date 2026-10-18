@@ -7,7 +7,7 @@
 </p>
 <p align="center"><strong>Python · MATLAB · ROS</strong></p>
 
-A curated collection of **{{COUNT}} UAV swarm simulation projects**, with an emphasis on **search and rescue (SAR)**. Explore cooperative search, flight dynamics, multi-agent reinforcement learning, and emergency communication networks.
+A curated collection of **{{COUNT}} UAV swarm simulation and supporting optimization projects**, with an emphasis on **search and rescue (SAR)**. Explore cooperative search, flight dynamics, multi-agent reinforcement learning, and emergency communication networks.
 
 **Explore:** [Project catalog](#-project-catalog) · [Selection guide](docs/SELECTION_GUIDE.md) · [SAR benchmark](docs/SAR_BENCHMARK.md) · [Catalog data](catalog.json)
 
@@ -29,15 +29,17 @@ A curated collection of **{{COUNT}} UAV swarm simulation projects**, with an emp
 | :--- | :--- | :--- | :--- | :--- |
 {{TABLE}}
 
-**Category key:** 🛟 SAR mission environments · 🔍 Cooperative target search · ⚙️ Simulation and control platforms · 📡 Communication networks.
+Read the [technical review of QAOA, SWAN, PSO, and the QAOA training pipeline](docs/OPTIMIZATION_ANALYSIS.md) for source findings, limitations, and proposed SAR integration. These additions include supporting optimization tools, not just UAV simulators.
 
-Detailed project profiles and supporting guides are currently in Vietnamese. This README provides an English overview.
+**Category key:** 🛟 SAR mission environments · 🔍 Cooperative target search · ⚙️ Simulation and control platforms · 📡 Communication networks · ⚛️ Quantum optimization · 🎆 Choreography · 🛤️ Path planning · 🧠 Parameter training.
+
+Individual project profiles, the selection guide, and the SAR benchmark are in Vietnamese. This README and the comparative optimization analysis are in English.
 
 ## 🔎 Scope and verification
 
 SAR environments explicitly describe search and rescue tasks. Target-search projects focus on cooperative discovery. General simulation platforms require additional mission logic, target models, and sensors. Network simulators support communication research relevant to rescue operations.
 
-Sources were reviewed on **October 15, 2026**. Suitability notes are editorial assessments based on official repositories and documentation. Third-party projects have **not been installed, benchmarked, or validated here**. Compatibility between projects has not been established, and upstream performance claims require independent verification.
+The original 11 entries were reviewed on **October 15, 2026**; four optimization and choreography entries were added on **October 18, 2026**. See each entry for its review date. Suitability notes are editorial assessments based on official repositories and documentation. Third-party projects have **not been installed, benchmarked, or validated here**. Compatibility between projects has not been established, and upstream performance claims require independent verification.
 
 ## 🧪 Build a reproducible SAR experiment
 
@@ -58,6 +60,7 @@ The benchmark is an experimental proposal; this repository does not report bench
 | [repositories/](repositories/) | Profiles with capabilities, SAR extensions, exercises, and limitations |
 | [Selection guide](docs/SELECTION_GUIDE.md) | Platform choices and environment considerations |
 | [SAR benchmark](docs/SAR_BENCHMARK.md) | Proposed scenarios, baselines, metrics, and run records |
+| [Optimization analysis](docs/OPTIMIZATION_ANALYSIS.md) | Four source reviews, integration proposals, and a small assignment formulation |
 | [README template](docs/README.template.md) | Source template for this generated overview |
 
 ## 🛠️ Maintain the catalog
